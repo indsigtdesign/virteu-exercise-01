@@ -585,6 +585,11 @@ blockquote .author {
 .white {
 	color: white;
 }
+
+.black {
+	color: black;
+}
+
 .bold {
 	font-weight: bold;
 }

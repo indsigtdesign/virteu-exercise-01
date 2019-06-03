@@ -55,3 +55,13 @@ $('.slick-carousel').slick({
 	prevArrow: $('.top-arrow'),
 	nextArrow: $('.bottom-arrow')
 });
+
+$('.value-carousel').slick({
+	infinite: false,
+	vertical:true,
+	verticalSwiping:true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow: $('#value-top-arrow'),
+	nextArrow: $('#value-bottom-arrow')
+});
