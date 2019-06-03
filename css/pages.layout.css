@@ -166,8 +166,6 @@ DEALINGS IN THE SOFTWARE.
 
 		}
 		
-		
-		
 		/* mobile/tablet format */
 		@media screen and (max-width:64em) and (min-width:32em), (max-height: 32em){
 			.item {
