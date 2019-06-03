@@ -53,7 +53,7 @@ DEALINGS IN THE SOFTWARE.
 				width: var(--boxwidth);
 				height: var(--boxheight);
 				display: grid;
-				grid-template-rows: minmax(1em, 4em) 1fr minmax(1em, 4em);
+				grid-template-rows: minmax(1em, 9em) 1fr minmax(1em, 9em);
 				grid-template-columns: 1fr 1fr;
 				justify-content: space-around;
 				grid-gap: 0em;
