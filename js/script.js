@@ -52,7 +52,13 @@ $( document ).ready(function() {
 	var height = care.clientHeight;
 
     $("#care-example").css("height",height);
-    console.log(height);
+
+    var describe = document.getElementById('describe-img'); 
+	//or however you get a handle to the IMG
+	var height = describe.clientHeight;
+
+    $("#describe-example").css("height",height);
+    $(".card-img").css("height",height);
 
     var article = document.getElementById('article-img'); 
 	//or however you get a handle to the IMG
@@ -60,7 +66,6 @@ $( document ).ready(function() {
 
     $("#article-example").css("height",height);
     $("#article-example2").css("height",height);
-    console.log(height);
 });
 
 $('.slick-carousel').slick({
@@ -70,7 +75,8 @@ $('.slick-carousel').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	prevArrow: $('.top-arrow'),
-	nextArrow: $('.bottom-arrow')
+	nextArrow: $('.bottom-arrow'),
+	adaptiveHeight: true
 });
 
 $('.value-carousel').slick({
@@ -80,7 +86,8 @@ $('.value-carousel').slick({
 	slidesToShow: 1,
 	slidesToScroll: 1,
 	prevArrow: $('#value-top-arrow'),
-	nextArrow: $('#value-bottom-arrow')
+	nextArrow: $('#value-bottom-arrow'),
+	adaptiveHeight: true
 });
 
 $('.care-carousel').slick({
@@ -103,4 +110,24 @@ $('.article-carousel').slick({
 	prevArrow: $('#article-top-arrow'),
 	nextArrow: $('#article-bottom-arrow'),
 	adaptiveHeight: true
+});
+
+$('.list-carousel').slick({
+	infinite: true,
+	vertical:true,
+	verticalSwiping:true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow: $('#list-top-arrow'),
+	nextArrow: $('#list-bottom-arrow'),
+});
+
+$('.describe-carousel').slick({
+	infinite: true,
+	vertical:true,
+	verticalSwiping:true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow: $('#describe-top-arrow'),
+	nextArrow: $('#describe-bottom-arrow'),
 });
