@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<!-- 
+Copyright (c) 2017 James Clarke - www.hi.agency
+
+Version: 0.1.2
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.
+
+-->
+<html lang="en">
+<head>
+	<title>Deck CSS Grid template by Hi. Creative Agency</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Deck is a dynamic, CSS only website template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/pages.styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/ui.webkit.css" />
+	<link rel="stylesheet" type="text/css" href="css/pages.layout.css" />
+	<link rel="stylesheet" type="text/css" href="css/page.gallery.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	
+</head>
+<body class="">
+
+	<input type="checkbox" id="menuChk" name="menuChk" aria-hidden="true" />
+	
+	<!--  desktop menu targets proxy-anchors -->
+	<div class="menu desktop" id="menu" aria-hidden="true">
+		<label for="menuChk" class="menuCloseBtn" aria-label="Toggle Menu Visibility">&times;</label>
+		<h3>Table of Contents:</h3>
+		<ul>
+			<li><a href="#p1">Introduction</a></li>
+			<li><a href="#p2">About Deck</a></li>
+			<li><a href="#p3">Navigation</a></li>
+			<li><a href="#p4">CSS Grid</a></li>
+			<li><a href="#p5">Mobile</a></li>
+			<li><a href="#p6">Legacy browsers</a></li>
+			<li><a href="#p7">Example: Image</a></li>
+			<li><a href="#p8">Example: Quote</a></li>
+			<li><a href="#p9" class="gallery-link">Example: Gallery</a></li>
+			
+		</ul>
+	</div>
+	
+	<!--  mobile menu controls -->
+	<div class="menu-control-mobile" id="menu-control" aria-hidden="true">
+		<label for="menuChk" class="menuCtrlButton" aria-label="Toggle Menu Visibility">&#9776;</label>
+	</div>
+	
+	<!--  mobile menu targets layout ids as anchors -->
+	<div class="menu mobile" id="menuMobile" aria-hidden="true">
+		<label for="menuChk" class="menuCloseBtn" aria-label="Toggle Menu Visibility">&times;</label>
+		<h3>Table of Contents:</h3>	
+		<nav role="navigation">
+			<ul>
+				<li><a href="#page1">Introduction</a></li>
+				<li><a href="#page2">About Deck</a></li>
+				<li><a href="#page3">Navigation</a></li>
+				<li><a href="#page4">CSS Grid</a></li>
+				<li><a href="#page5">Mobile</a></li>
+				<li><a href="#page6">Legacy browsers</a></li>
+				<li><a href="#page7">Example: Image</a></li>
+				<li><a href="#page8">Example: Quote</a></li>
+				<li><a href="#page9" class="gallery-link">Example: Gallery</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="wrapper">
+	<!-- Proxy anchors associate with layout ids in CSS. Transforms applied to scroll pages to view in desktop mode-->
+	    <div class="proxy-anchor" id="p1" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p2" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p3" aria-hidden="true"></div>
+		<div class="proxy-anchor" id="p4" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p5" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p6" aria-hidden="true"></div>
+		<div class="proxy-anchor" id="p7" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p8" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p9" aria-hidden="true"></div>
+		<div class="proxy-anchor" id="p10" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p11" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p12" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p13" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p14" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p15" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p16" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p17" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p18" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p19" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p20" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p21" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p22" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p23" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p24" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p25" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p26" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p27" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p28" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p29" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p30" aria-hidden="true"></div>
+	<!--/ Proxy anchors -->
+		
+		
+		<div class="grid">
+		
+			<div class="item" id="item1">
+				<a href="#p1" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page1" class="layout left">
+					<div class="content">
+							<h1>Hello!</h1>
+							<h2 class="white">This is a pre-alpha prototype tool designed to help you articulate what you care about - in general, and then in relation to this new product you’re working on. It comes from the VIRT-EU project work and is just one in a series of different tools to try bring ethical reflection into the process of designing connected things.</h2>
+					</div>
+					<div class="sidebar">
+						<a href="#p2" class="next-page" tabindex="-1" aria-hidden="true">cool</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="item" id="item2">
+				
+				<a href="#p2" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<div id="page2" class="layout left">
+					<div class="content">
+						<h2>So you submitted a product sketch for the challenge of “Designing for Difference in the Connected Home.”</h2>
+					</div>
+				</div>
+
+				<div id="page2" class="layout right">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<p>“Design”, “connected”, “smart” shared homes. Let’s dig a little deeper. What does it mean to add smartness, connectivity and intelligence to the devices we design? And what does it mean when we add those devices into communal living spaces? </p>
+							<p>At this moment when headlines around tech gone wrong flood our news daily, let’s reflect. What is a good product, to you? Does good only mean functions well? Or does a good product align with your idea of what goodness even means, in the first place? </p>
+							<p>Let’s find some North stars, as understood through your values. Hopefully the work together will be useful as you keep working on your idea for the Design Challenge.</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p3" class="next-page" tabindex="-1" aria-hidden="true">OK</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="item" id="item3">
+				<a href="#p3" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="image3" class="image">
+				</div>
+				<div id="page3" class="layout">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<h2>The experience will take<br> about an hour and a half. <br>You will need the following:</h2>
+							<h3>This computer<br>
+							A smartphone per teammate<br>
+							Paper<br>
+							post-its<br>
+							pens<br>
+							and sharpies.</h3>
+						</div>
+						<div class="sidebar">
+							<a href="#p4" class="next-page" tabindex="-1" aria-hidden="true">ready</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="item" id="item4">
+				<a href="#p4" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page4" class="layout left">
+						<div class="content">
+							<h1>How many people are in your team?</h1>
+						</div>
+				</div>
+
+				<div id="page4" class="layout right">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<div class="number">
+								<span class="minus">-</span>
+								<input type="text" value="1"/>
+								<span class="plus">+</span>
+							</div>
+						</div>
+						<div class="sidebar">
+							<a href="#p5" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			<div class="item" id="item5">
+				<a href="#p5" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page5" class="layout left">
+						<div class="content">
+							<h2>We found a story for each one of you to start thinking through.</h2>
+
+							<h3>Take your smartphone out, <br>open the camera, and position it in front of your respective QR code (one per team member).</h3>
+
+							<h3>Take a few minutes to read your respective stories. </h3>
+						</div>
+				</div>
+				<div id="page5" class="layout right">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
+							<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
+        					<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
+        					<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
+        					<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
+        					<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
+						</div>
+						<div class="sidebar">
+							<a href="#p6" class="next-page" tabindex="-1" aria-hidden="true">done</a>
+						</div>
+				</div>
+			</div>	
+			
+			
+			<div class="item" id="item6">
+				<a href="#p6" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page6" class="layout left">
+					<div class="content">
+						<h1>Discuss what you read with your teammates.</h1>
+					</div>
+				</div>
+
+				<div id="page6" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h3>How did it make you feel? <br>What did it make you excited about, worry about?</h3>
+						<h2>Try to pick the product apart and guess a few things about its creation. <br>Why do you think it exists?<br> What do you think the creators intentions were? </h2>
+					</div>
+					<div class="sidebar">
+						<a href="#p7" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item" id="item7">
+				<a href="#p7" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<div id="page7" class="layout left">
+					<div class="content">
+						<h1>Saying What You Care About</h1>
+					</div>
+				</div>
+				
+				<div id="page7" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<p>This round is a solo activity. Keeping in mind what you have read, and what you learned or felt from that discussion, write down your values. This is for you, as a person, in life in general.</p>
+						<h2>Here are some helper prompts: </h2>
+						<h3>A good life for me unfolds when I choose to be ____.</h3> 
+						<h3>The world would be better if everyone ____.</h3> 
+						<h3>I [read about] [heard about] ___ and it made me care about ___. </h3> 
+						<p>Each individual takes a post it of the same color.<br>Write a big word + example of when you saw this happening or not </p>
+					</div>
+					<div class="sidebar">
+						<a href="#p8" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item" id="item8">
+				<a href="#p8" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page8" class="layout left">
+					<div class="content">
+						<h1>Present to each other.</h1>
+						<h3>Person sitting to the left of computer starts. Take turns.</h3>
+					</div>
+				</div>
+
+				<div id="page8" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h2>See if you can come up with dilemmas for each other.</h2>
+						<h2>For example, let’s say you want to treat everyone with respect and not be prejudiced, would you still buy products that use (potentially) poorly trained facial recognition systems because you think it will keep you safer?</h2>
+					</div>
+					<div class="sidebar">
+						<a href="#p9" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item9">
+				<a href="#p9" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="image9" class="image">
+					<div class="image-container"><img src="img/quote.png" alt="Artwork"></div>
+				</div>
+				<div id="page9" class="layout ">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h2>cluster</h2>
+						<h1>Place similar words next to each other</h1>
+					</div>
+					<div class="sidebar">
+						<a href="#p10" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item10">
+				<a href="#p10" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<div id="page10" class="layout left">
+					<div class="content">
+						<h1>Cluster Negotiation</h1>
+						<br>
+						<h2>If definitions of same words are different, can you agree upon one of the definitions?</h2>
+					</div>
+				</div>
+				
+				<div id="page10" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<p>If the two definitions are strongly held “positions”, you may need to negotiate the difference. Discuss your definitions and try to re-write together. </p>
+						<p> <span class="bold">Some pointers for discussion:</span><br>
+						When you respond to the other, try saying things like “It sounds like you are concerned about ___”
+						<br>Try to talk in a way that will encourage people to say “Yes, that’s right,” which shows they see that you understand them.</p>
+						<p>Remember this is your teammate and try to show that you recognize and respect each others’ opinions, distinct backgrounds, mutual admiration and goal of building something together</p>
+					</div>
+					<div class="sidebar">
+						<a href="#p11" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item11">
+				<a href="#p11" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<div id="page11" class="layout left">
+					<div class="content">
+						<h1>Saying What You Care About</h1>
+					</div>
+				</div>
+				
+				<div id="page11" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<p>This round is a solo activity again but now we are asking you to reflect on what you care about in relation to your product.</p>
+						<h2>Here are some helper prompts: </h2>
+						<h3>Our product would make the world better if it is____. </h3> 
+						<h3>If someone wrote an article about our device, they would say that the creators really care about the ___ in the product.</h3> 
+						<p>Each individual takes a post it of the same color,
+						<br>but different from Round 1. Write a big word + example of when you saw this happening or not</p>
+					</div>
+					<div class="sidebar">
+						<a href="#p12" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item12">
+				<a href="#p12" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page12" class="layout left">
+					<div class="content">
+						<h1>Present to each other.</h1>
+						<h3>Person sitting to the right of computer starts. Take turns.</h3>
+					</div>
+				</div>
+
+				<div id="page12" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h2>See if you can come up with dilemmas for each other.</h2>
+						<p>For example, let’s you want to be sustainable by reducing your carbon footprint can you still travel around the globe to promote your product?</p>
+						<p>But if you product is doing a great job demonstrating sustainability, won’t it be more meaningful if you can share and show the work you are doing?</p>
+					</div>
+					<div class="sidebar">
+						<a href="#p13" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item13">
+				<a href="#p13" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page13" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page13" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p14" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item14">
+				<a href="#p14" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page14" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page14" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p15" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item15">
+				<a href="#p15" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page15" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page15" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p16" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item16">
+				<a href="#p16" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page16" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page16" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p17" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item17">
+				<a href="#p17" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page17" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page17" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p18" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item18">
+				<a href="#p18" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page18" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page18" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p19" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item19">
+				<a href="#p19" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page19" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page19" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p20" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item20">
+				<a href="#p20" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page20" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page20" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p21" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item21">
+				<a href="#p21" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page21" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page21" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p22" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item22">
+				<a href="#p22" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page22" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page22" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p23" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item23">
+				<a href="#p23" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page23" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page23" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p24" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item24">
+				<a href="#p24" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page24" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page24" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p25" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item25">
+				<a href="#p25" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page25" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page25" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p26" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item26">
+				<a href="#p26" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page26" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page26" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p27" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item27">
+				<a href="#p27" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page27" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page27" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p28" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item28">
+				<a href="#p28" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page28" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page28" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p29" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item29">
+				<a href="#p29" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page29" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page29" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p30" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item30">
+				<a href="#p30" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page30" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page30" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<!--<a href="#p16" class="next-page" tabindex="-1" aria-hidden="true">shared</a>-->
+					</div>
+				</div>
+			</div>
+
+			<!--
+			<div class="item" id="item9">
+				<a href="#p9" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<input type="radio" class="gallery-radio" name="image" id="img1" checked>
+				<input type="radio" class="gallery-radio" name="image" id="img2">
+				<input type="radio" class="gallery-radio" name="image" id="img3">
+				<input type="radio" class="gallery-radio" name="image" id="img4">
+				<input type="radio" class="gallery-radio" name="image" id="img5">
+				<input type="radio" class="gallery-radio" name="image" id="img6">
+				<input type="radio" class="gallery-radio" name="image" id="img7">
+				<input type="radio" class="gallery-radio" name="image" id="img8">
+				
+				<div id="page9" class="layout gallery">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<div class="gallery-col2">
+							<div class="gallery-imageholder">
+								
+							</div>
+						</div>
+						<div class="gallery-col1">
+							<div class="gallery-nav">
+								<h2>Gallery</h2>
+								<label for="img1" class="gallery-thumb" id="img1thumb">Image1</label>
+								<label for="img2" class="gallery-thumb" id="img2thumb">Image2</label>
+								<label for="img3" class="gallery-thumb" id="img3thumb">Image3</label>
+								<label for="img4" class="gallery-thumb" id="img4thumb">Image4</label>
+								<label for="img5" class="gallery-thumb" id="img5thumb">Image5</label>
+								<label for="img6" class="gallery-thumb" id="img6thumb">Image6</label>
+								<label for="img7" class="gallery-thumb" id="img7thumb">Image7</label>
+								<label for="img8" class="gallery-thumb" id="img8thumb">Image8</label>
+							</div>
+						</div>
+						
+					</div>
+					<div class="sidebar">
+						<a href="#p1" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+			-->
+			
+		</div>
+		
+	</div>
+
+	<!-- You know what it is -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+
+	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-firestore.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
