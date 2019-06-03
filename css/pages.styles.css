@@ -630,7 +630,18 @@ input {
 	display: inline-block;
 	vertical-align: middle;
 }
-
+input text{
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 110px;
+	width: 145px;
+	text-align: center;
+	font-size: 3rem;
+	border: 5px solid #ffd200;
+	border-radius: 25px;
+	display: inline-block;
+	vertical-align: middle;
+}
 /* card slider */
 
 .slick-arrow {
@@ -685,4 +696,7 @@ input {
 	border-radius: 1rem;
 	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 	height: 0px;
+}
+.qr{
+	width:180px;
 }

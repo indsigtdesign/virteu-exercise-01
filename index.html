@@ -130,7 +130,7 @@ DEALINGS IN THE SOFTWARE.
 
 				<div id="page1" class="layout right">
 					<div class="content">
-						<p>It comes from the VIRT-EU project work and is just one in a series of different tools to try bring ethical reflection into the process of designing connected things. More context <a href="https://www.virteu-235.com/analysis/2019/6/3/towards-tools">here</a>.</p>
+						<p>It comes from the <a href = "https://virteuproject.eu">VIRT-EU</a> project work and is just one in a series of different tools to try bring ethical reflection into the process of designing connected things. More context <a href="https://www.virteu-235.com/analysis/2019/6/3/towards-tools">here</a>.</p>
 						<p>As this is a pre-alpha prototype tool ;) we will welcome any feedback you may have from the experience (option to be interviewed about that at the end).</p>
 					</div>
 					<div class="sidebar">
@@ -215,10 +215,11 @@ DEALINGS IN THE SOFTWARE.
 						<div class="content">
 							<div class="number">
 								<span class="minus">-</span>
-								<input type="text" value="1"/>
+								<input type="text" value="1" id = "group"/>
 								<span class="plus">+</span>
 							</div>
 						</div>
+<!-- var x = document.getElementById("group").value -->
 						<div class="sidebar">
 							<a href="#p5" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
 						</div>
@@ -243,12 +244,12 @@ DEALINGS IN THE SOFTWARE.
 							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
 						</div>
 						<div class="content">
-							<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
-							<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
-        					<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
-        					<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
-        					<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
-        					<img src='https://chart.googleapis.com/chart?cht=qr&chl=http%3A%2F%2Ftest.com&chs=180x180&choe=UTF-8&chld=L|2' rel='nofollow' alt='qr code'>
+							<img src='img/qr/1.png' rel='nofollow' alt='qr code' class='qr'>
+							<img src='img/qr/2.png' rel='nofollow' alt='qr code' class='qr'>
+        					<img src='img/qr/3.png' rel='nofollow' alt='qr code' class='qr'>
+        					<img src='img/qr/4.png' rel='nofollow' alt='qr code' class='qr'>
+        					<img src='img/qr/5.png' rel='nofollow' alt='qr code' class='qr'>
+        					<img src='img/qr/6.png' rel='nofollow' alt='qr code' class='qr'>
 						</div>
 						<div class="sidebar">
 							<a href="#p6" class="next-page" tabindex="-1" aria-hidden="true">done</a>
@@ -580,17 +581,79 @@ DEALINGS IN THE SOFTWARE.
 						<div class="value-carousel">
 							<div class="card">
 								<p class="heading">Transparency</p>
-								<p class="card-content"></p>
+								<p class="card-content">Providing access to information concerning personal data processing.
+								Encouraging transparency about data operations, device usage and firmware and software upgrades.</p>
 							</div>
 
 							<div class="card">
 								<p class="heading">Openness</p>
-								<p class="card-content"></p>
+								<p class="card-content">Promoting open hardware and software with open source code.</p>
 							</div>
 
 							<div class="card">
 								<p class="heading">Responsibility</p>
-								<p class="card-content"></p>
+								<p class="card-content">Strengthening algorithmic accountability/liability.</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Interoperability</p>
+								<p class="card-content">Promoting interoperability as one of the key values to create a trusted IoT ecosystem. Facilitating data portability, both for taking data out and in.
+</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Accountability</p>
+								<p class="card-content">Effectively addressing security and safety issues, adopting adequate risk prevention strategies and measures.</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Safety & security</p>
+								<p class="card-content">Protecting users against any harm due to IoT devices (hardware and software security). Updatability of devices for security.</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Sustainability</p>
+								<p class="card-content">Issues concerning the potential impact on social and environmental justice.</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Inclusion and equality</p>
+								<p class="card-content">Considering diversity and inclusion both in IoT development and with regard to users’ experience.</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Participation</p>
+								<p class="card-content">Effectively engaging data subjects in data processing design. Promoting debate and dialogue (e.g. manifestos).</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Autonomy</p>
+								<p class="card-content">Safeguarding individual self-determination and freedom of expression.</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Non-discrimination</p>
+								<p class="card-content">Preventing any forms of discrimination.</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Well-being</p>
+								<p class="card-content">Increase individuals’ well-being and fostering “IoT for good”</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Dignity</p>
+								<p class="card-content">Avoiding any forms of surveillance or invasive control over individuals using IoT devices. IoT devices shall not be used to collect unauthorised private information or to publicly disclose private facts.</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Data Protection</p>
+								<p class="card-content">Providing users access to their collected data, giving them explanations about how personal information is used.Issues concerning the distinction between anonymous and personal data that could allow companies to avoid data protection but still have impacts on groups and individuals.Ensuring the rights to access, rectification, erasure (right to be forgotten) and to object with regard to personal data processed by means of IoT devices and facilitating data portability.</p>
+							</div>
+
+							<div class="card">
+								<p class="heading">Privacy</p>
+								<p class="card-content">Safeguarding intimacy, identity, and physical integrity.</p>
 							</div>
 						</div>
 
@@ -916,7 +979,14 @@ DEALINGS IN THE SOFTWARE.
 						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
 					</div>
 					<div class="content">
-
+						In order to uphold <input type="text" name="vals">, which means <input type="text" name="defs"> in our product, 
+						we will <input type="text" name="act">.
+						In order to uphold <input type="text" name="vals">, which means <input type="text" name="defs"> in our product, 
+						we will <input type="text" name="act">.
+						In order to uphold <input type="text" name="vals">, which means <input type="text" name="defs"> in our product, 
+						we will <input type="text" name="act">.
+						In order to uphold <input type="text" name="vals">, which means <input type="text" name="defs"> in our product, 
+						we will <input type="text" name="act">.
 					</div>
 					<div class="sidebar">
 						<a href="#p29" class="next-page" tabindex="-1" aria-hidden="true">submit</a>
@@ -976,8 +1046,21 @@ DEALINGS IN THE SOFTWARE.
 			</div>
 			
 		</div>
-		
-	</div>
+<!-- 	<div class="footer">
+		<h3 class="text-center">About VIRT-EU</h3>
+		<div class="">
+			<div class="">
+				<p>
+					<a href="https://virteuproject.eu">VIRT-EU</a> is a consortium of international organisations and universities seeking to understand how the Internet of Things (IoT) designers and developers enact ethics in practice in order to develop tools to support reflection on ethics, data and privacy throughout the development process. Partners include IT University of Copenhagen, Copenhagen Institute of Interaction Design, Uppsala University, Politecnico di Torino, London School of Economics and Open Rights Group.
+				</p>
+				<p>This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No <a href="https://cordis.europa.eu/project/rcn/205981_en.html">732027</a>.</p>
+			</div>
+			<div class="">
+				<img src="img/euflag.png" width="100" alt="European flag" class="img-fluid mr-md-4">
+			</div>
+		</div>
+	</div>	-->	
+	</div> 
 
 	<!-- You know what it is -->
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
