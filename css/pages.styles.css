@@ -104,97 +104,226 @@ DEALINGS IN THE SOFTWARE.
 	background-size: 60%;
 }
 #item8 {
-	background: #eb0000 url() no-repeat 0 0;
-	background-size: contain;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		326deg,
+		rgba(255, 255, 255, 1) 20%,
+		rgba(239, 71, 58, 1) 20%,
+		rgba(203, 45, 62, 1) 90%,
+		rgba(255, 255, 255, 1) 90%
+	);
 	color: white;
 }
 #item9 {
-	background: #fff;
+	background: rgb(102, 125, 182);
+	background: linear-gradient(
+		80deg,
+		rgba(102, 125, 182, 1) 0%,
+		rgba(0, 130, 200, 1) 55%,
+		rgba(255, 255, 255, 1) 55%
+	);
 }
 #item10 {
-	background: #fff;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		100deg,
+		rgba(255, 255, 255, 1) 20%,
+		rgba(64, 224, 208, 1) 20%,
+		rgba(64, 224, 208, 1) 100%
+	);
 }
 #item11 {
-	background: #000 url() no-repeat 0 0;
-	background-size: contain;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		80deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 1) 55%,
+		rgba(255, 255, 255, 1) 55%
+	);
+}
+
+#item11 h1 {
 	color: white;
 }
 #item12 {
-	background: #000 url() no-repeat 0 0;
-	background-size: contain;
-	color: white;
+	background: rgb(97, 97, 97);
+	background: linear-gradient(
+		355deg,
+		rgba(97, 97, 97, 1) 0%,
+		rgba(155, 197, 195, 1) 85%,
+		rgba(255, 255, 255, 1) 85%
+	);
 }
 
 #item13 {
-	background: yellow;
+	background: rgb(254, 241, 96);
+	background: linear-gradient(
+		6deg,
+		rgba(254, 241, 96, 1) 0%,
+		rgba(245, 230, 83, 1) 20%,
+		rgba(255, 255, 255, 1) 20%
+	);
 }
 
 #item14 {
-	background: green;
+	background: rgb(123, 239, 178);
+	background: linear-gradient(
+		140deg,
+		rgba(123, 239, 178, 1) 0%,
+		rgba(38, 194, 129, 1) 45%,
+		rgba(255, 255, 255, 1) 45%
+	);
 }
 
 #item15 {
-	background: grey;
+	background: rgb(103, 128, 159);
+	background: linear-gradient(
+		14deg,
+		rgba(103, 128, 159, 1) 0%,
+		rgba(60, 93, 134, 1) 80%,
+		rgba(255, 255, 255, 1) 80%
+	);
 }
 
 #item16 {
-	background: pink;
+	background: rgb(144, 230, 127);
+	background: linear-gradient(
+		45deg,
+		rgba(144, 230, 127, 1) 20%,
+		rgba(203, 255, 192, 1) 48%,
+		rgba(255, 255, 255, 1) 48%
+	);
 }
 
 #item17 {
-	background: blue;
+	background: rgb(51, 110, 123);
+	background: linear-gradient(
+		120deg,
+		rgba(51, 110, 123, 1) 0%,
+		rgba(92, 139, 149, 1) 85%,
+		rgba(255, 255, 255, 1) 85%
+	);
 }
 
 #item18 {
-	background: red;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		100deg,
+		rgba(255, 255, 255, 1) 20%,
+		rgba(64, 224, 208, 1) 20%,
+		rgba(64, 224, 208, 1) 100%
+	);
 }
-
 #item19 {
-	background: red;
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		80deg,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, 1) 55%,
+		rgba(255, 255, 255, 1) 55%
+	);
 }
 
+#item19 h1 {
+	color: white;
+}
 #item20 {
-	background: red;
+	background: rgb(97, 97, 97);
+	background: linear-gradient(
+		355deg,
+		rgba(97, 97, 97, 1) 0%,
+		rgba(155, 197, 195, 1) 85%,
+		rgba(255, 255, 255, 1) 85%
+	);
 }
 
 #item21 {
-	background: red;
+	background: rgb(254, 241, 96);
+	background: linear-gradient(
+		6deg,
+		rgba(254, 241, 96, 1) 0%,
+		rgba(245, 230, 83, 1) 20%,
+		rgba(255, 255, 255, 1) 20%
+	);
 }
 
 #item22 {
-	background: red;
+	background: rgb(123, 239, 178);
+	background: linear-gradient(
+		140deg,
+		rgba(123, 239, 178, 1) 0%,
+		rgba(38, 194, 129, 1) 45%,
+		rgba(255, 255, 255, 1) 45%
+	);
 }
 
 #item23 {
-	background: red;
+	background: rgb(103, 128, 159);
+	background: linear-gradient(
+		14deg,
+		rgba(103, 128, 159, 1) 0%,
+		rgba(60, 93, 134, 1) 80%,
+		rgba(255, 255, 255, 1) 80%
+	);
 }
 
 #item24 {
-	background: red;
+	background: rgb(144, 230, 127);
+	background: linear-gradient(
+		45deg,
+		rgba(144, 230, 127, 1) 20%,
+		rgba(203, 255, 192, 1) 48%,
+		rgba(255, 255, 255, 1) 48%
+	);
 }
 
 #item25 {
-	background: red;
+	background: rgb(51, 110, 123);
+	background: linear-gradient(
+		120deg,
+		rgba(51, 110, 123, 1) 0%,
+		rgba(92, 139, 149, 1) 85%,
+		rgba(255, 255, 255, 1) 85%
+	);
 }
 
 #item26 {
-	background: red;
+	background: #fff url() no-repeat 0 0;
+	background-size: contain;
 }
-
 #item27 {
-	background: red;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		186deg,
+		rgba(255, 255, 255, 1) 15%,
+		rgba(131, 96, 195, 1) 15%,
+		rgba(46, 191, 145, 1) 100%
+	);
+	color: white;
 }
-
 #item28 {
-	background: red;
+	background: #fff url() no-repeat center center;
+	background-size: 60%;
 }
-
 #item29 {
-	background: red;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		326deg,
+		rgba(255, 255, 255, 1) 20%,
+		rgba(239, 71, 58, 1) 20%,
+		rgba(203, 45, 62, 1) 90%,
+		rgba(255, 255, 255, 1) 90%
+	);
+	color: white;
 }
-
-#item30 {
-	background: red;
+#item930 {
+	background: rgb(102, 125, 182);
+	background: linear-gradient(
+		80deg,
+		rgba(102, 125, 182, 1) 0%,
+		rgba(0, 130, 200, 1) 55%,
+		rgba(255, 255, 255, 1) 55%
+	);
 }
 
 body {
