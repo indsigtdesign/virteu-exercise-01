@@ -90,8 +90,13 @@ DEALINGS IN THE SOFTWARE.
 	background-size: contain;
 }
 #item6 {
-	background: #02249f url() no-repeat 0 0;
-	background-size: contain;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(
+		186deg,
+		rgba(255, 255, 255, 1) 15%,
+		rgba(131, 96, 195, 1) 15%,
+		rgba(46, 191, 145, 1) 100%
+	);
 	color: white;
 }
 #item7 {
@@ -288,13 +293,13 @@ blockquote .author {
 
 #item3 .layout a.next-page {
 	color: white;
-	border: 5px solid #373b44;
+	border: 5px solid white;
 }
 
 #item3 .layout a.next-page:hover {
 	color: #4286f4;
-	background-color: #373b44;
-	border: 5px solid #373b44;
+	background-color: white;
+	border: 5px solid white;
 }
 
 #item3 .layout a.next-page:focus {
@@ -325,13 +330,27 @@ blockquote .author {
 	background: black;
 }
 #item6 .layout a.next-page {
+	color: white;
+	border: 5px solid white;
+}
+
+#item6 .layout a.next-page:hover {
+	color: #2ebf91;
+	background-color: white;
+	border: 5px solid white;
+}
+
+#item7 .layout a.next-page {
 	color: black;
 	background: white;
+	border: 5px solid black;
 }
-#item7 .layout a.next-page {
+
+#item7 .layout a.next-page:hover {
 	color: white;
 	background: black;
 }
+
 #item8 .layout a.next-page {
 	color: black;
 	background: white;
@@ -471,4 +490,40 @@ input {
 	border-radius: 25px;
 	display: inline-block;
 	vertical-align: middle;
+}
+
+/* card slider */
+.slick-carousel img {
+	width: 100%;
+}
+
+.slick-arrow {
+	border: none;
+	width: 100%;
+	font-size: 1rem;
+	text-decoration: none;
+	padding: 1em 1em;
+	border-radius: 0em;
+	text-transform: uppercase;
+	margin: 1rem 0rem;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 1rem;
+}
+
+.card {
+	background: white;
+	padding: 1rem;
+	margin: 1rem 1rem;
+	border-radius: 1rem;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+.list {
+	margin: 0.75rem 0rem;
 }

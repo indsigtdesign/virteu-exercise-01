@@ -45,3 +45,13 @@ $(document).ready(function() {
 		return false;
 	});
 });
+
+$('.slick-carousel').slick({
+	infinite: false,
+	vertical:true,
+	verticalSwiping:true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow: $('.top-arrow'),
+	nextArrow: $('.bottom-arrow')
+});
