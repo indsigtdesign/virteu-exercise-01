@@ -100,8 +100,13 @@ DEALINGS IN THE SOFTWARE.
 	color: white;
 }
 #item7 {
-	background: #fff url() no-repeat center center;
-	background-size: 60%;
+	background: rgb(103, 128, 159);
+	background: linear-gradient(
+		14deg,
+		rgba(103, 128, 159, 1) 0%,
+		rgba(60, 93, 134, 1) 80%,
+		rgba(255, 255, 255, 1) 80%
+	);
 }
 #item8 {
 	background: rgb(255, 255, 255);
@@ -627,9 +632,6 @@ input {
 }
 
 /* card slider */
-.slick-carousel img {
-	width: 100%;
-}
 
 .slick-arrow {
 	border: none;
@@ -652,6 +654,10 @@ input {
 	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 }
 
+.slick-slide img {
+	width: 100%;
+}
+
 .heading {
 	font-size: 1.2rem;
 	font-weight: bold;
@@ -660,4 +666,23 @@ input {
 
 .list {
 	margin: 0.75rem 0rem;
+}
+
+#care-example {
+	background: white;
+	padding: 1rem;
+	margin: 1rem 1rem;
+	border-radius: 1rem;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+	height: 0px;
+}
+
+#article-example,
+#article-example2 {
+	background: white;
+	padding: 1rem;
+	margin: 1rem 1rem;
+	border-radius: 1rem;
+	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+	height: 0px;
 }

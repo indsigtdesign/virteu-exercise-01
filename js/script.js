@@ -46,6 +46,23 @@ $(document).ready(function() {
 	});
 });
 
+$( document ).ready(function() {
+    var care = document.getElementById('care-img'); 
+	//or however you get a handle to the IMG
+	var height = care.clientHeight;
+
+    $("#care-example").css("height",height);
+    console.log(height);
+
+    var article = document.getElementById('article-img'); 
+	//or however you get a handle to the IMG
+	var height = article.clientHeight;
+
+    $("#article-example").css("height",height);
+    $("#article-example2").css("height",height);
+    console.log(height);
+});
+
 $('.slick-carousel').slick({
 	infinite: false,
 	vertical:true,
@@ -64,4 +81,26 @@ $('.value-carousel').slick({
 	slidesToScroll: 1,
 	prevArrow: $('#value-top-arrow'),
 	nextArrow: $('#value-bottom-arrow')
+});
+
+$('.care-carousel').slick({
+	infinite: true,
+	vertical:true,
+	verticalSwiping:true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow: $('#care-top-arrow'),
+	nextArrow: $('#care-bottom-arrow'),
+	adaptiveHeight: true
+});
+
+$('.article-carousel').slick({
+	infinite: true,
+	vertical:true,
+	verticalSwiping:true,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	prevArrow: $('#article-top-arrow'),
+	nextArrow: $('#article-bottom-arrow'),
+	adaptiveHeight: true
 });
