@@ -54,12 +54,8 @@ DEALINGS IN THE SOFTWARE.
 			<li><a href="#p2">Warm Up</a></li>
 			<li><a href="#p3">Articulate + Cluster</a></li>
 			<li><a href="#p4">Prioritise</a></li>
-			<li><a href="#p5">Document + Manifest</a></li>
-			<li><a href="#p6">Thank You + Follow-Up</a></li>
-			<li><a href="#p7">Example: Image</a></li>
-			<li><a href="#p8">Example: Quote</a></li>
-			<li><a href="#p9" class="gallery-link">Example: Gallery</a></li>
-			
+			<li><a href="#p5">Document & Manifest</a></li>
+			<li><a href="#p6">Thank You & Follow-Up</a></li>
 		</ul>
 	</div>
 	
@@ -101,6 +97,7 @@ DEALINGS IN THE SOFTWARE.
 	    <div class="proxy-anchor" id="p13" aria-hidden="true"></div>
 	    <div class="proxy-anchor" id="p14" aria-hidden="true"></div>
 	    <div class="proxy-anchor" id="p15" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p16" aria-hidden="true"></div>
 	    <div class="proxy-anchor" id="p19" aria-hidden="true"></div>
 	    <div class="proxy-anchor" id="p20" aria-hidden="true"></div>
 	    <div class="proxy-anchor" id="p21" aria-hidden="true"></div>
@@ -132,9 +129,11 @@ DEALINGS IN THE SOFTWARE.
 					<div class="content">
 						<p>It comes from the <a href = "https://virteuproject.eu">VIRT-EU</a> project work and is just one in a series of different tools to try bring ethical reflection into the process of designing connected things. More context <a href="https://www.virteu-235.com/analysis/2019/6/3/towards-tools">here</a>.</p>
 						<p>As this is a pre-alpha prototype tool ;) we will welcome any feedback you may have from the experience (option to be interviewed about that at the end).</p>
+						<h2>Before we begin, please tell us the name of your project</h2>
+						<input type="text" name="teamName" id="teamName" placeholder="awesome team name">
 					</div>
 					<div class="sidebar">
-						<a href="#p2" class="next-page" tabindex="-1" aria-hidden="true">cool</a>
+						<a href="#p2" class="next-page" tabindex="-1" aria-hidden="true"  onclick="saveTeamName()" >cool</a>
 					</div>
 				</div>
 			</div>
@@ -215,13 +214,12 @@ DEALINGS IN THE SOFTWARE.
 						<div class="content">
 							<div class="number">
 								<span class="minus">-</span>
-								<input type="text" value="1" id = "group"/>
+								<input type="text" value="1" id="teamNumber"/>
 								<span class="plus">+</span>
 							</div>
 						</div>
-<!-- var x = document.getElementById("group").value -->
 						<div class="sidebar">
-							<a href="#p5" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+							<a href="#p5" class="next-page" tabindex="-1" aria-hidden="true" onclick="getTeamNumber()">Next</a>
 						</div>
 				</div>
 			</div>
@@ -243,13 +241,7 @@ DEALINGS IN THE SOFTWARE.
 						<div class="navbar">
 							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
 						</div>
-						<div class="content">
-							<img src='img/qr/1.png' rel='nofollow' alt='qr code' class='qr'>
-							<img src='img/qr/2.png' rel='nofollow' alt='qr code' class='qr'>
-        					<img src='img/qr/3.png' rel='nofollow' alt='qr code' class='qr'>
-        					<img src='img/qr/4.png' rel='nofollow' alt='qr code' class='qr'>
-        					<img src='img/qr/5.png' rel='nofollow' alt='qr code' class='qr'>
-        					<img src='img/qr/6.png' rel='nofollow' alt='qr code' class='qr'>
+						<div class="content" id="qrCodes">
 						</div>
 						<div class="sidebar">
 							<a href="#p6" class="next-page" tabindex="-1" aria-hidden="true">done</a>
@@ -674,6 +666,17 @@ DEALINGS IN THE SOFTWARE.
 				<a href="#p16" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
 				<div id="page16" class="layout left">
 					<div class="content">
+						<div class="footer">
+							<h2 class="text-center">About VIRT-EU</h2>
+							<div class="">
+								<div class="">
+									<p>
+										<a href="https://virteuproject.eu">VIRT-EU</a> is a consortium of international organisations and universities seeking to understand how the Internet of Things (IoT) designers and developers enact ethics in practice in order to develop tools to support reflection on ethics, data and privacy throughout the development process. Partners include IT University of Copenhagen, Copenhagen Institute of Interaction Design, Uppsala University, Politecnico di Torino, London School of Economics and Open Rights Group.
+									</p>
+									
+								</div>
+							</div>
+						</div>	
 					</div>
 				</div>
 
@@ -683,6 +686,11 @@ DEALINGS IN THE SOFTWARE.
 						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
 					</div>
 					<div class="content">
+						<div>
+							<p>This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No <a href="https://cordis.europa.eu/project/rcn/205981_en.html">732027</a>.</p>
+							
+							<img src="img/euflag.png" width="100" alt="European flag" class="img-fluid mr-md-4">
+						</div>
 					</div>
 					<div class="sidebar">
 					</div>
@@ -877,7 +885,7 @@ DEALINGS IN THE SOFTWARE.
 					</div>
 					<div class="content mt-n-6" style="max-width: 38em;">
 						<div class="slick-carousel">
-							<div class="card slick-card">
+							<div class="card slick-card"  id="slick-card">
 								<p class="heading">Transparency + security: </p>
 								<p class="card-content">
 									A company is making a tracking wearable to find people in a crowd during concerts and big events in case of disasters and emergencies.<br><br>
@@ -892,16 +900,12 @@ DEALINGS IN THE SOFTWARE.
 							<div class="card slick-card">
 								<p class="heading">Openness + inclusion: </p>
 								<p class="card-content">
-									A company is making a tracking wearable to find people in a crowd during concerts and big events in case of disasters and emergencies.<br><br>
+									A company is developing an IoT radio and cares deeply about openness as in, open to all to contribute, and inclusion as in, all kinds of people can participate. Some people with extreme viewpoints participate as loudly as possible.<br><br>
 
-									The device’s data is shared with event organisers, public health services and local police. The company cares deeply about transparency as in, being open about why they are building the tracker, and security as in, keeping their users as safe as possible.<br><br>
-
-									Pickpocketings have occurred during the concerts and police are using the tracking devices’ GPS data to pinpoint the thieves. Should the company tell the concert goers that their data can be shared to the police before the concert goers start using the wearable?<br><br>
-
-									But then the concert goers might not use the wearable anymore, and will not have a safe experience if there is an emergency.</p>
+									Can the company be “inclusive” if some users feel extremely uncomfortable and leave the platform? Should they stay “open and inclusive” as previously defined or do they need to redefine?</p>
 							</div>
 
-							<div class="card slick-card" id="slick-card">
+							<div class="card slick-card">
 								<p class="heading">Responsibility + sustainability + inclusion:</p>
 								<p class="card-content">
 									There’s a new connected lightbulb that allows users to control the brightness with voice commands. The company cares deeply about sustainability as in, having as little electronic waste as possible, responsibility as in, being responsible about how they process and use data and the cloud, as well as inclusion as in, including diverse users.<br><br>
@@ -1016,7 +1020,7 @@ DEALINGS IN THE SOFTWARE.
 
 			<div class="item" id="item28">
 				<a href="#p28" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
-				<div id="page28" class="layout left">
+				<div id="page28" class="layout left" style="grid-template-columns: 0.75fr 1fr;">
 					<div class="content">
 						<h1>Commit it</h1>
 						<br>
@@ -1029,16 +1033,61 @@ DEALINGS IN THE SOFTWARE.
 					<div class="navbar">
 						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
 					</div>
-					<div class="content">
-						<div class="value-input">
-							<p>In order to uphold <input type="text" name="vals">,</p>
-							<p>which means <input type="text" name="defs"> in our product,</p>
-							<p>we will <input type="text" name="act">.</p>
+					<div class="content" style="grid-template-columns: 0.75fr 1fr;">
+						<button type="button" id="valueList-top-arrow" data-role="none" class="bottom-arrow" aria-label="Next" role="button" style="display: inline-block;" aria-disabled="false">Previous value</button>
+
+							<div class="valueList-carousel">
+								<div class="card">
+								<div class="value-input">
+									<h3>our #1 value</h3>
+									<p>In order to uphold <input type="text" id="V1-vals">,</p>
+									<p>which means <input type="text" id="V1-defs"> in our product,</p>
+									<p>we will <input type="text" id="V1-act">.</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="value-input">
+									<h3>our #2 value</h3>
+									<p>In order to uphold <input type="text" id="V2-vals">,</p>
+									<p>which means <input type="text" id="V2-defs"> in our product,</p>
+									<p>we will <input type="text" id="V2-act">.</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="value-input">
+									<h3>our #3 value</h3>
+									<p>In order to uphold <input type="text" id="V3-vals">,</p>
+									<p>which means <input type="text" id="V3-defs"> in our product,</p>
+									<p>we will <input type="text" id="V3-act">.</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="value-input">
+									<h3>our #4 value</h3>
+									<p>In order to uphold <input type="text" id="V4-vals">,</p>
+									<p>which means <input type="text" id="V4-defs"> in our product,</p>
+									<p>we will <input type="text" id="V4-act">.</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="value-input">
+									<h3>our #5 value</h3>
+									<p>In order to uphold <input type="text" id="V5-vals">,</p>
+									<p>which means <input type="text" id="V5-defs"> in our product,</p>
+									<p>we will <input type="text" id="V5-act">.</p>
+								</div>
+							</div>
 						</div>
-						
+
+						<button type="button" id="valueList-bottom-arrow" data-role="none" class="bottom-arrow" aria-label="Next" role="button" style="display: inline-block;" aria-disabled="false">Next value</button>
+
 					</div>
 					<div class="sidebar">
-						<a href="#p29" class="next-page" tabindex="-1" aria-hidden="true">submit</a>
+						<a href="#p29" class="next-page" tabindex="-1" aria-hidden="true" onclick="commitVals()">Commit</a>
 					</div>
 				</div>
 			</div>
@@ -1083,31 +1132,24 @@ DEALINGS IN THE SOFTWARE.
 						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
 					</div>
 					<div class="content">
-						<p>Please check [yes] [no] if you’d like to hear from us about the other series of tools we will develop in the future.</p><p>
-						Please check [yes] [no] if you’d be ok with a follow-up interview with our researchers about your experience of using the tool
-						</p>
+						<p><input type="radio" name="tools" id="yes_tools" value="yes"> <label for="yes_tools">Yes, we'd like to hear from you about the other series of <span class="radio">tools you will develop in the future.</span></label></p>
+						<p><input type="radio" name="tools" id="no_tools" value="tools"> <label for="no_tools">No thanks.</label></p>
+
+						<div class="divider"></div>
+
+						<p><input type="radio" name="interview" id="yes_interview" value="yes"> <label for="yes_interview">Yes, we’d be ok with a follow-up interview with your <span class="radio"> researchers about our experience of using the tool.</span></label></p>
+
+						<p><input type="radio" name="interview" id="no_interview" value="interview"> <label for="no_interview">No thanks.</label></p>
+
 					</div>
 					<div class="sidebar">
-						<!--<a href="#p16" class="next-page" tabindex="-1" aria-hidden="true">shared</a>-->
+						<a href="#p16" class="next-page" tabindex="-1" aria-hidden="true" onclick="submit()">Submit</a>
 					</div>
 				</div>
 			</div>
 			
 		</div>
-<!-- 	<div class="footer">
-		<h3 class="text-center">About VIRT-EU</h3>
-		<div class="">
-			<div class="">
-				<p>
-					<a href="https://virteuproject.eu">VIRT-EU</a> is a consortium of international organisations and universities seeking to understand how the Internet of Things (IoT) designers and developers enact ethics in practice in order to develop tools to support reflection on ethics, data and privacy throughout the development process. Partners include IT University of Copenhagen, Copenhagen Institute of Interaction Design, Uppsala University, Politecnico di Torino, London School of Economics and Open Rights Group.
-				</p>
-				<p>This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No <a href="https://cordis.europa.eu/project/rcn/205981_en.html">732027</a>.</p>
-			</div>
-			<div class="">
-				<img src="img/euflag.png" width="100" alt="European flag" class="img-fluid mr-md-4">
-			</div>
-		</div>
-	</div>	-->	
+
 	</div> 
 
 	<!-- You know what it is -->

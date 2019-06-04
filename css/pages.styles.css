@@ -627,7 +627,7 @@ blockquote .author {
 
 #item24 .layout a.next-page:hover {
 	color: white;
-	background: rgba(92, 139, 149, 1);
+	background: rgba(144, 230, 127, 1);
 }
 
 #item25 .layout a.next-page {
@@ -682,6 +682,17 @@ blockquote .author {
 #item29 .layout a.next-page:hover {
 	color: white;
 	background: rgba(92, 139, 149, 1);
+}
+
+#item30 .layout a.next-page {
+	color: rgba(0, 130, 200, 1);
+	background: white;
+	border: 5px solid rgba(0, 130, 200, 1);
+}
+
+#item30 .layout a.next-page:hover {
+	color: white;
+	background: rgba(0, 130, 200, 1);
 }
 
 /* used for two col page*/
@@ -771,7 +782,7 @@ span {
 	text-align: center;
 }
 
-#group {
+#teamNumber {
 	margin-left: 20px;
 	margin-right: 20px;
 	height: 110px;
@@ -839,10 +850,46 @@ span {
 	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 	height: 0px;
 }
+.qrCode {
+	display: inline-block;
+	margin: 0 0.8rem;
+	text-align: center;
+}
+
 .qr {
 	width: 180px;
 }
 
+#qrCodes {
+	width: 100%;
+}
+
 .mt-n-6 {
 	margin-top: -6rem;
+}
+
+#teamName {
+	width: 100%;
+	border: none;
+	border-bottom: 5px solid black;
+	font-size: 2rem;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.value-input input {
+	border: none;
+	border-bottom: 2px solid black;
+	font: 16px/1.5em georgia, serif;
+}
+
+.divider {
+	display: block;
+	height: 2px;
+	width: 100%;
+	background-color: rgba(0, 130, 200, 1);
+	margin: 2rem 0rem;
+}
+
+.radio {
+	margin-left: 24px;
 }
