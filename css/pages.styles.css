@@ -69,9 +69,9 @@ DEALINGS IN THE SOFTWARE.
 	background: rgb(255, 255, 255);
 	background: linear-gradient(
 		100deg,
-		rgba(255, 255, 255, 1) 25%,
-		rgba(55, 59, 68, 1) 25%,
-		rgba(63, 115, 199, 1) 60%
+		rgba(255, 255, 255, 1) 45%,
+		rgba(55, 59, 68, 1) 45%,
+		rgba(63, 115, 199, 1) 100%
 	);
 	color: white;
 }
@@ -102,7 +102,7 @@ DEALINGS IN THE SOFTWARE.
 #item7 {
 	background: rgb(103, 128, 159);
 	background: linear-gradient(
-		14deg,
+		3deg,
 		rgba(103, 128, 159, 1) 0%,
 		rgba(60, 93, 134, 1) 80%,
 		rgba(255, 255, 255, 1) 80%
@@ -112,8 +112,8 @@ DEALINGS IN THE SOFTWARE.
 	background: rgb(255, 255, 255);
 	background: linear-gradient(
 		326deg,
-		rgba(255, 255, 255, 1) 20%,
-		rgba(239, 71, 58, 1) 20%,
+		rgba(255, 255, 255, 1) 18%,
+		rgba(239, 71, 58, 1) 18%,
 		rgba(203, 45, 62, 1) 90%,
 		rgba(255, 255, 255, 1) 90%
 	);
@@ -307,27 +307,31 @@ DEALINGS IN THE SOFTWARE.
 	color: white;
 }
 #item28 {
-	background: #fff url() no-repeat center center;
-	background-size: 60%;
+	background: rgb(144, 230, 127);
+	background: linear-gradient(
+		85deg,
+		rgba(144, 230, 127, 1) 20%,
+		rgba(203, 255, 192, 1) 48%,
+		rgba(255, 255, 255, 1) 48%
+	);
 }
 #item29 {
-	background: rgb(255, 255, 255);
+	background: rgb(51, 110, 123);
 	background: linear-gradient(
-		326deg,
-		rgba(255, 255, 255, 1) 20%,
-		rgba(239, 71, 58, 1) 20%,
-		rgba(203, 45, 62, 1) 90%,
-		rgba(255, 255, 255, 1) 90%
+		120deg,
+		rgba(51, 110, 123, 1) 0%,
+		rgba(92, 139, 149, 1) 28%,
+		rgba(255, 255, 255, 1) 28%
 	);
-	color: white;
 }
-#item930 {
+
+#item30 {
 	background: rgb(102, 125, 182);
 	background: linear-gradient(
 		80deg,
 		rgba(102, 125, 182, 1) 0%,
-		rgba(0, 130, 200, 1) 55%,
-		rgba(255, 255, 255, 1) 55%
+		rgba(0, 130, 200, 1) 50%,
+		rgba(255, 255, 255, 1) 50%
 	);
 }
 
@@ -475,65 +479,209 @@ blockquote .author {
 }
 
 #item7 .layout a.next-page {
+	color: white;
+	border: 5px solid white;
+}
+
+#item7 .layout a.next-page:hover {
+	color: rgb(103, 128, 159);
+	background: white;
+}
+
+#item8 .layout a.next-page {
+	color: rgba(203, 45, 62, 1);
+	background: white;
+	border: 5px solid rgba(203, 45, 62, 1);
+}
+
+#item8 .layout a.next-page:hover {
+	color: white;
+	background: rgba(203, 45, 62, 1);
+}
+
+#item9 .layout a.next-page {
+	color: rgba(0, 130, 200, 1);
+	background: white;
+	border: 5px solid rgba(0, 130, 200, 1);
+}
+
+#item9 .layout a.next-page:hover {
+	color: white;
+	background: rgba(0, 130, 200, 1);
+}
+
+#item10 .layout a.next-page {
+	color: white;
+	background: rgba(64, 224, 208, 1);
+	border: 5px solid white;
+}
+
+#item10 .layout a.next-page:hover {
+	color: rgba(64, 224, 208, 1);
+	background: white;
+}
+
+#item11 .layout a.next-page {
 	color: black;
 	background: white;
 	border: 5px solid black;
 }
 
-#item7 .layout a.next-page:hover {
+#item11 .layout a.next-page:hover {
 	color: white;
 	background: black;
 }
 
-#item8 .layout a.next-page {
-	color: black;
-	background: white;
-}
-#item9 .layout a.next-page {
-	color: black;
-	background: white;
-}
-#item10 .layout a.next-page {
-	color: black;
-	background: white;
-}
-#item11 .layout a.next-page {
-	color: black;
-	background: white;
-}
 #item12 .layout a.next-page {
-	color: black;
+	color: white;
+	background: rgba(97, 97, 97, 1);
+	border: 5px solid white;
+}
+
+#item12 .layout a.next-page:hover {
+	color: rgba(97, 97, 97, 1);
 	background: white;
 }
 
 #item13 .layout a.next-page {
-	color: black;
+	color: white;
+	background: rgba(245, 230, 83, 1);
+	border: 5px solid white;
+}
+
+#item13 .layout a.next-page:hover {
+	color: rgba(245, 230, 83, 1);
 	background: white;
 }
 
 #item14 .layout a.next-page {
-	color: black;
+	color: rgba(38, 194, 129, 1);
 	background: white;
+	border: 5px solid rgba(38, 194, 129, 1);
+}
+
+#item14 .layout a.next-page:hover {
+	color: white;
+	background: rgba(38, 194, 129, 1);
 }
 
 #item15 .layout a.next-page {
-	color: black;
+	color: white;
+	background: rgba(60, 93, 134, 1);
+	border: 5px solid white;
+}
+
+#item15 .layout a.next-page:hover {
+	color: rgba(60, 93, 134, 1);
 	background: white;
 }
 
-#item16 .layout a.next-page {
+#item19 .layout a.next-page {
 	color: black;
+	background: white;
+	border: 5px solid black;
+}
+
+#item19 .layout a.next-page:hover {
+	color: white;
+	background: black;
+}
+
+#item20 .layout a.next-page {
+	color: white;
+	border: 5px solid white;
+}
+
+#item20 .layout a.next-page:hover {
+	color: rgba(97, 97, 97, 1);
 	background: white;
 }
 
-#item17 .layout a.next-page {
-	color: black;
+#item21 .layout a.next-page {
+	color: white;
+	background: rgba(245, 230, 83, 1);
+	border: 5px solid white;
+}
+
+#item21 .layout a.next-page:hover {
+	color: rgba(245, 230, 83, 1);
 	background: white;
 }
 
-#item18 .layout a.next-page {
+#item22 .layout a.next-page {
+	color: rgba(38, 194, 129, 1);
+	background-color: white;
+	border: 5px solid rgba(38, 194, 129, 1);
+}
+
+#item22 .layout a.next-page:hover {
+	color: white;
+	background: rgba(38, 194, 129, 1);
+}
+
+#item24 .layout a.next-page {
+	color: rgba(144, 230, 127, 1);
+	background-color: white;
+	border: 5px solid rgba(144, 230, 127, 1);
+}
+
+#item24 .layout a.next-page:hover {
+	color: white;
+	background: rgba(92, 139, 149, 1);
+}
+
+#item25 .layout a.next-page {
+	color: rgba(92, 139, 149, 1);
+	background-color: white;
+	border: 5px solid rgba(92, 139, 149, 1);
+}
+
+#item25 .layout a.next-page:hover {
+	color: white;
+	background: rgba(92, 139, 149, 1);
+}
+
+#item26 .layout a.next-page {
 	color: black;
 	background: white;
+	border: 5px solid black;
+}
+
+#item26 .layout a.next-page:hover {
+	color: white;
+	background: black;
+}
+
+#item27 .layout a.next-page {
+	color: white;
+	border: 5px solid white;
+}
+
+#item27 .layout a.next-page:hover {
+	color: rgba(46, 191, 145, 1);
+	background: white;
+}
+
+#item28 .layout a.next-page {
+	color: rgba(144, 230, 127, 1);
+	background: white;
+	border: 5px solid rgba(144, 230, 127, 1);
+}
+
+#item28 .layout a.next-page:hover {
+	color: white;
+	background: rgba(144, 230, 127, 1);
+}
+
+#item29 .layout a.next-page {
+	color: rgba(92, 139, 149, 1);
+	background: white;
+	border: 5px solid rgba(92, 139, 149, 1);
+}
+
+#item29 .layout a.next-page:hover {
+	color: white;
+	background: rgba(92, 139, 149, 1);
 }
 
 /* used for two col page*/
@@ -639,15 +787,16 @@ span {
 
 .slick-arrow {
 	border: none;
-	width: 100%;
+	width: 92%;
 	font-size: 1rem;
 	text-decoration: none;
 	padding: 1em 1em;
 	border-radius: 0em;
 	text-transform: uppercase;
-	margin: 1rem 0rem;
+	margin: 1rem 4% 1rem 4%;
 	box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
 	border-radius: 1rem;
+	background-color: white;
 }
 
 .card {
@@ -692,4 +841,8 @@ span {
 }
 .qr {
 	width: 180px;
+}
+
+.mt-n-6 {
+	margin-top: -6rem;
 }

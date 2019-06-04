@@ -53,6 +53,21 @@ $( document ).ready(function() {
 
     $("#care-example").css("height",height);
 
+    var value = document.getElementById('value-card');
+
+    var slick = document.getElementById('slick-card'); 
+	//or however you get a handle to the IMG
+	var height = slick.clientHeight;
+
+    $(".slick-card").css("height",(height - 58));
+
+    var value = document.getElementById('value-card'); 
+
+	//or however you get a handle to the IMG
+	var height = value.clientHeight;
+
+    $(".value").css("height",(height - 58));
+
     var describe = document.getElementById('describe-img'); 
 	//or however you get a handle to the IMG
 	var height = describe.clientHeight;
@@ -69,7 +84,7 @@ $( document ).ready(function() {
 });
 
 $('.slick-carousel').slick({
-	infinite: false,
+	infinite: true,
 	vertical:true,
 	verticalSwiping:true,
 	slidesToShow: 1,
@@ -80,7 +95,7 @@ $('.slick-carousel').slick({
 });
 
 $('.value-carousel').slick({
-	infinite: false,
+	infinite: true,
 	vertical:true,
 	verticalSwiping:true,
 	slidesToShow: 1,
