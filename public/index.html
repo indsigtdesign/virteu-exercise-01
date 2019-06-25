@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<!-- 
+Copyright (c) 2017 James Clarke - www.hi.agency
+
+Version: 0.1.2
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights 
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell 
+copies of the Software, and to permit persons to whom the Software is 
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER 
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE.
+
+-->
+<html lang="en">
+<head>
+	<title>VIRT-EU North Star Exercise v1</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="Deck is a dynamic, CSS only website template">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" type="text/css" href="css/pages.styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/ui.webkit.css" />
+	<link rel="stylesheet" type="text/css" href="css/pages.layout.css" />
+	<link rel="stylesheet" type="text/css" href="css/page.gallery.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	
+</head>
+<body class="">
+
+	<input type="checkbox" id="menuChk" name="menuChk" aria-hidden="true" />
+	
+	<!--  desktop menu targets proxy-anchors -->
+	<div class="menu desktop" id="menu" aria-hidden="true">
+		<label for="menuChk" class="menuCloseBtn" aria-label="Toggle Menu Visibility">&times;</label>
+		<h3>Table of Contents:</h3>
+		<ul>
+			<li><a href="#p1">Introduction</a></li>
+			<li><a href="#p2">Warm Up</a></li>
+			<li><a href="#p3">Articulate + Cluster</a></li>
+			<li><a href="#p4">Prioritise</a></li>
+			<li><a href="#p5">Document & Manifest</a></li>
+			<li><a href="#p6">Thank You & Follow-Up</a></li>
+		</ul>
+	</div>
+	
+	<!--  mobile menu controls -->
+	<div class="menu-control-mobile" id="menu-control" aria-hidden="true">
+		<label for="menuChk" class="menuCtrlButton" aria-label="Toggle Menu Visibility">&#9776;</label>
+	</div>
+	
+	<!--  mobile menu targets layout ids as anchors -->
+	<div class="menu mobile" id="menuMobile" aria-hidden="true">
+		<label for="menuChk" class="menuCloseBtn" aria-label="Toggle Menu Visibility">&times;</label>
+		<h3>Table of Contents:</h3>	
+		<nav role="navigation">
+			<ul>
+				<li><a href="#page1">Introduction</a></li>
+				<li><a href="#page3">Warm Up</a></li>
+				<li><a href="#page4">Articulate + Cluster</a></li>
+				<li><a href="#page14">Prioritise</a></li>
+				<li><a href="#page20">Document + Manifest</a></li>
+				<li><a href="#page22">Thank You + Follow-Up</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<div class="wrapper">
+	<!-- Proxy anchors associate with layout ids in CSS. Transforms applied to scroll pages to view in desktop mode-->
+	    <div class="proxy-anchor" id="p1" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p2" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p3" aria-hidden="true"></div>
+		<div class="proxy-anchor" id="p4" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p5" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p6" aria-hidden="true"></div>
+		<div class="proxy-anchor" id="p7" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p8" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p9" aria-hidden="true"></div>
+		<div class="proxy-anchor" id="p10" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p11" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p12" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p13" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p14" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p15" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p16" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p19" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p20" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p21" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p22" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p23" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p24" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p25" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p26" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p27" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p28" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p29" aria-hidden="true"></div>
+	    <div class="proxy-anchor" id="p30" aria-hidden="true"></div>
+	<!--/ Proxy anchors -->
+		
+		
+		<div class="grid">
+		
+			<div class="item" id="item1">
+				<a href="#p1" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page1" class="layout left">
+					<div class="content">
+							<h1>Hello!</h1>
+							<br>
+							<h2 class="white">This is a pre-alpha prototype tool designed to help you articulate what you care about - as individuals, within a group who is working together, in relation to this new product you’re working on.</h2>
+					</div>
+				</div>
+
+				<div id="page1" class="layout right">
+					<div class="content">
+						<p>It comes from the <a href = "https://virteuproject.eu">VIRT-EU</a> project work and is just one in a series of different tools to try bring ethical reflection into the process of designing connected things. More context <a href="https://www.virteu-235.com/analysis/2019/6/3/towards-tools">here</a>.</p>
+						<p>As this is a pre-alpha prototype tool ;) we will welcome any feedback you may have from the experience (option to be interviewed about that at the end).</p>
+						<h2>Before we begin, please tell us the name of your project</h2>
+						<input type="text" name="teamName" id="teamName" placeholder="awesome team name">
+					</div>
+					<div class="sidebar">
+						<a href="#p2" class="next-page" tabindex="-1" aria-hidden="true"  onclick="saveTeamName()" >cool</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="item" id="item2">
+				
+				<a href="#p2" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<div id="page2" class="layout left">
+					<div class="content">
+						<h2>So you submitted a product sketch for the challenge of “Designing for Difference in the Connected Home.” “Design”, “connected”, “smart” shared homes. Let’s dig a little deeper.</h2>
+					</div>
+				</div>
+
+				<div id="page2" class="layout right">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<p>What does it mean to add smartness, connectivity and intelligence to the devices we design? And what does it mean to integrate those devices into communal living spaces? At this moment, when headlines around tech gone wrong flood our news daily, let’s reflect. </p><p>What is a good [IoT?] product, to you? Does good only mean functions well? Or does a good product align with your idea of what goodness means, in the first place? What if your idea of goodness is not the same as that of your intended users? </p><p>Let’s find some North stars, as understood through your values. We'll share some of your community's values (similar IoT start-ups) as uncovered in our research that you can use as inspiration throughout. This exercise is for you to define your North star as we think it’s important for any continued development of your product - hopefully it will be useful as you keep working on your idea.</p>
+						</div>
+						<div class="sidebar">
+							<a href="#p3" class="next-page" tabindex="-1" aria-hidden="true">OK</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="item" id="item3">
+				<a href="#p3" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<div id="page3" class="layout left">
+						<div class="content">
+							<h1 class="black">The experience will take about two hours.</h1>
+						</div>
+				</div>
+				
+				<div id="page3" class="layout right">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<h2>You will need the following:</h2>
+							<h3>This computer</h3>
+							<h3>A table big enough for your team</h3>
+							<h3>A smartphone per teammate</h3>
+							<h3>Paper</h3>
+							<h3>big and small Post-its</h3>
+							<h3>pens</h3>
+							<h3>and sharpies.</h3>
+						</div>
+						<div class="sidebar">
+							<a href="#p4" class="next-page" tabindex="-1" aria-hidden="true">ready</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="item" id="item4">
+				<a href="#p4" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page4" class="layout left">
+						<div class="content">
+							<h1>How many people are in your team?</h1>
+						</div>
+				</div>
+
+				<div id="page4" class="layout right">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content">
+							<div class="number">
+								<span class="minus">-</span>
+								<input type="text" value="1" id="teamNumber"/>
+								<span class="plus">+</span>
+							</div>
+						</div>
+						<div class="sidebar">
+							<a href="#p5" class="next-page" tabindex="-1" aria-hidden="true" onclick="getTeamNumber()">Next</a>
+						</div>
+				</div>
+			</div>
+			
+			
+			<div class="item" id="item5">
+				<a href="#p5" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page5" class="layout left">
+						<div class="content">
+							<h2>We found a story for each one of you to start thinking through.</h2>
+
+							<h3>Take your smartphone out, <br>open the camera, and position it in front of your respective QR code (one per team member).</h3>
+
+							<h3>Take a few minutes to read your respective stories. </h3>
+						</div>
+				</div>
+				<div id="page5" class="layout right">
+						
+						<div class="navbar">
+							<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+						</div>
+						<div class="content" id="qrCodes">
+						</div>
+						<div class="sidebar">
+							<a href="#p6" class="next-page" tabindex="-1" aria-hidden="true">done</a>
+						</div>
+				</div>
+			</div>	
+			
+			
+			<div class="item" id="item6">
+				<a href="#p6" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page6" class="layout left">
+					<div class="content">
+						<h1>Discuss what you read.</h1>
+					</div>
+				</div>
+
+				<div id="page6" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h2>How did it make you feel?</h2>
+						<h2>What did it make you excited about, worry about?</h2>
+						<h2>Try to pick the product apart and guess a few things about its creation.</h2>
+						<h2> Why do you think it exists?</h2>
+						<h2>What do you think the creators intentions were?</h2>
+					</div>
+					<div class="sidebar">
+						<a href="#p7" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item" id="item7">
+				<a href="#p7" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<div id="page7" class="layout left">
+					<div class="content">
+						<h1>Saying What You Care About</h1>
+						<p>This round is a solo activity. Keeping in mind what you have read, and what you learned or felt from that discussion, write down what is important to you. This is for you, as a person.</p>
+					</div>
+				</div>
+				
+				<div id="page7" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+
+					<div class="content mt-n-6">
+						<h3> Each individual takes a big Post-it and follows this template: </h3>
+
+					<div class="care-carousel">
+						<div class="card" id="care-example">
+							<h3>We can have a better digital future if everyone ____. <br> I [read the article about] _____ and it inspired me to care about _____.</h3> 
+						</div>
+
+						<div class="card" >
+							<img id="care-img" src="img/Step_1/step_1_1.jpg">
+						</div>
+
+						<div class="card">
+							<img src="img/Step_1/step_1_2.jpg">
+						</div>
+
+						<div class="card">
+							<img src="img/Step_1/step_1_3.jpg">
+						</div>
+
+						<div class="card">
+							<img src="img/Step_1/step_1_4.jpg">
+						</div>
+
+						<div class="card">
+							<img src="img/Step_1/step_1_5.jpg">
+						</div>
+					</div>
+
+
+
+					<button type="button" id="care-bottom-arrow" data-role="none" class="bottom-arrow" aria-label="Next" role="button" style="display: inline-block;" aria-disabled="false">See examples</button>
+						
+					</div>
+					<div class="sidebar">
+						<a href="#p8" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item" id="item8">
+				<a href="#p8" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page8" class="layout left">
+					<div class="content">
+						<h1>Present to each other.</h1>
+						<h3>Person sitting to the left of computer starts. Take turns.</h3>
+					</div>
+				</div>
+
+				<div id="page8" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h2>People can talk about the same words and mean completely different things.</h2>
+
+						<h2>What do you mean by that - can you bring it down to earth? Make a story? </h2>
+
+						<h2>
+						Do we mean the same thing? Make sure your definitions are clear to each other.</h2>
+					</div>
+					<div class="sidebar">
+						<a href="#p9" class="next-page" tabindex="-1" aria-hidden="true">done</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item9">
+				<a href="#p9" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page9" class="layout left">
+					<div class="content">
+						<h1>Definition Negotiation</h1>
+						<br>
+						<h2>Maybe you both talk about “privacy” but understand it differently. Can you agree upon one of the definitions?</h2>
+					</div>
+				</div>
+				<div id="page9" class="layout right">	
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<p>Try to re-write at least 2 new definitions per contested word, then discuss again. If you still can’t agree on one communal definition, here are some pointers for discussion:</p>
+						<p> <span class="bold">Some pointers:</span><br>
+						When you respond to the other, try saying things like “It sounds like you are concerned about ___”
+						<br><p>Try to make sure you repeat the most important things others say to ensure people see that you understand what they are saying.</p>
+						<p>Remember this is your teammate and try to show that you recognize and respect each others’ opinions, distinct backgrounds, mutual admiration and goal of building something together</p>
+						<p>If you cannot come to a common definition, that’s fine, just keep your individual definitions and put an asterisk * on words you could not agree upon</p>
+					</div>
+
+					<div class="sidebar">
+						<a href="#p10" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item10">
+				<a href="#p10" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page10" class="layout left">
+					<div class="content">
+						<img src="img/Step_2/step_2.png" style="width: 100%;">	
+					</div>
+				</div>
+
+				<div id="page10" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h1>Cluster</h1>
+						<br>
+						<h2>Place similar ideas near each other on the table in front of you. </h2>
+						<h2>Come up with one big word that represents each area and write it on a small Post-its.</h2>
+					</div>
+					<div class="sidebar">
+						<a href="#p11" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item11">
+				<a href="#p11" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<div id="page11" class="layout left">
+					<div class="content">
+						<h1>Saying What You Care About</h1>
+
+						<p class="white">This round is a solo activity again but now we are asking you to reflect on what you care about in relation to your product.</p>
+					</div>
+				</div>
+				
+				<div id="page11" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content mt-n-6">
+						
+						<h3>Each individual takes a big Post-it and follows one of these templates: </h3>
+						
+						<div class="article-carousel">
+							<div class="card" id="article-example">
+								<h3>Our product would make the world better/users happier if our device is ______. As in, __example of how you would do it___.</h3> 
+							</div>
+
+							<div class="card" id="article-example2">
+								<h3>If someone wrote an article about our device, they would say that the creators really care about the ___ in the product.</h3>
+							</div>
+
+							<div class="card" >
+								<img id="article-img" src="img/Step_1/step_1_1.jpg">
+							</div>
+
+							<div class="card">
+								<img src="img/Step_1/step_1_2.jpg">
+							</div>
+
+							<div class="card">
+								<img src="img/Step_1/step_1_3.jpg">
+							</div>
+
+							<div class="card">
+								<img src="img/Step_1/step_1_4.jpg">
+							</div>
+
+							<div class="card">
+								<img src="img/Step_1/step_1_5.jpg">
+							</div>
+						</div>
+
+						<button type="button" id="article-bottom-arrow" data-role="none" class="bottom-arrow" aria-label="Next" role="button" style="display: inline-block;" aria-disabled="false">See examples</button>
+					</div>
+					<div class="sidebar">
+						<a href="#p12" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item12">
+				<a href="#p12" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page12" class="layout left">
+					<div class="content">
+						<h1>Present to each other.</h1>
+						<h3>Person sitting to the right of computer starts. </h3><h3> Take turns.</h3>
+					</div>
+				</div>
+
+				<div id="page12" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h2>People can talk about the same words and mean completely different things.</h2>
+
+						<h2>What do you mean by that - can you bring it down to earth? Make a story? </h2>
+
+						<h2>
+						Do we mean the same thing? Make sure your definitions are clear to each other.</h2>
+					</div>
+					<div class="sidebar">
+						<a href="#p13" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item13">
+				<a href="#p13" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+
+				<div id="page13" class="layout left">
+					<div class="content">
+						<h1>Definition Negotiation</h1>
+						<br>
+						<h3>Maybe you both talk about “privacy” but understand it differently.</h3>
+						<h2>Can you agree upon one of the definitions?</h2>
+					</div>
+				</div>
+				<div id="page13" class="layout right">	
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<p>Try to re-write at least 2 new definitions per contested word, then discuss again. If you still can’t agree on one communal definition, here are some pointers for discussion:</p>
+						<p> <span class="bold">Some pointers:</span><br>
+						When you respond to the other, try saying things like “It sounds like you are concerned about ___”
+						<br><p>Try to make sure you repeat the most important things others say to ensure people see that you understand what they are saying.</p>
+						<p>Remember this is your teammate and try to show that you recognize and respect each others’ opinions, distinct backgrounds, mutual admiration and goal of building something together</p>
+						<p>If you cannot come to a common definition, that’s fine, just keep your individual definitions and put an asterisk * on words you could not agree upon</p>
+					</div>
+
+					<div class="sidebar">
+						<a href="#p14" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item14">
+				<a href="#p14" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+
+				<div id="page10" class="layout left">
+					<div class="content">
+						<img src="img/Step_4/step_4.png" style="width: 100%;">	
+					</div>
+				</div>
+
+				<div id="page14" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h1>Cluster</h1>
+						<br>
+						<h2>Place similar ideas near each other on the table in front of you. </h2>
+						<h2>Come up with one big word that represents each area and write it on a small Post-its.</h2>
+					</div>
+					<div class="sidebar">
+						<a href="#p15" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item15">
+				<a href="#p15" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page15" class="layout left">
+					<div class="content">
+						<h1>Saying What You Care About</h1>
+						<h2>
+						Here are 15 values coming from similar start-ups to yours.</h2><h3> You can add any of these to your clusters.</h3>
+					</div>
+				</div>
+
+				<div id="page15" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content mt-n-6">
+						<div class="value-carousel">
+							<div class="card value">
+								<p class="heading">Transparency</p>
+								<p class="card-content">Providing access to information concerning personal data processing.
+								Encouraging transparency about data operations, device usage and firmware and software upgrades.</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Openness</p>
+								<p class="card-content">Promoting open hardware and software with open source code.</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Responsibility</p>
+								<p class="card-content">Strengthening algorithmic accountability/liability.</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Interoperability</p>
+								<p class="card-content">Promoting interoperability as one of the key values to create a trusted IoT ecosystem. Facilitating data portability, both for taking data out and in.
+</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Accountability</p>
+								<p class="card-content">Effectively addressing security and safety issues, adopting adequate risk prevention strategies and measures.</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Safety & security</p>
+								<p class="card-content">Protecting users against any harm due to IoT devices (hardware and software security). Updatability of devices for security.</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Sustainability</p>
+								<p class="card-content">Issues concerning the potential impact on social and environmental justice.</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Inclusion and equality</p>
+								<p class="card-content">Considering diversity and inclusion both in IoT development and with regard to users’ experience.</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Participation</p>
+								<p class="card-content">Effectively engaging data subjects in data processing design. Promoting debate and dialogue (e.g. manifestos).</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Autonomy</p>
+								<p class="card-content">Safeguarding individual self-determination and freedom of expression.</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Non-discrimination</p>
+								<p class="card-content">Preventing any forms of discrimination.</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Well-being</p>
+								<p class="card-content">Increase individuals’ well-being and fostering “IoT for good”</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Dignity</p>
+								<p class="card-content">Avoiding any forms of surveillance or invasive control over individuals using IoT devices. IoT devices shall not be used to collect unauthorised private information or to publicly disclose private facts.</p>
+							</div>
+
+							<div class="card value" id="value-card">
+								<p class="heading">Data Protection</p>
+								<p class="card-content">Providing users access to their collected data, giving them explanations about how personal information is used.Issues concerning the distinction between anonymous and personal data that could allow companies to avoid data protection but still have impacts on groups and individuals.Ensuring the rights to access, rectification, erasure (right to be forgotten) and to object with regard to personal data processed by means of IoT devices and facilitating data portability.</p>
+							</div>
+
+							<div class="card value">
+								<p class="heading">Privacy</p>
+								<p class="card-content">Safeguarding intimacy, identity, and physical integrity.</p>
+							</div>
+						</div>
+
+					<button type="button" id="value-bottom-arrow" data-role="none" class="bottom-arrow" aria-label="Next" role="button" style="display: inline-block;" aria-disabled="false">Next value</button>
+
+						<p> Take a small Post-it and write down the word you want to have in your company. You can add as many as you want to the existing clusters on the table.</p>
+					</div>
+					<div class="sidebar">
+						<a href="#p19" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item16">
+				<a href="#p16" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page16" class="layout left">
+					<div class="content">
+						<div class="footer">
+							<h2 class="text-center">About VIRT-EU</h2>
+							<div class="">
+								<div class="">
+									<p>
+										<a href="https://virteuproject.eu">VIRT-EU</a> is a consortium of international organisations and universities seeking to understand how the Internet of Things (IoT) designers and developers enact ethics in practice in order to develop tools to support reflection on ethics, data and privacy throughout the development process. Partners include IT University of Copenhagen, Copenhagen Institute of Interaction Design, Uppsala University, Politecnico di Torino, London School of Economics and Open Rights Group.
+									</p>
+									
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+
+				<div id="page16" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<div>
+							<p>This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No <a href="https://cordis.europa.eu/project/rcn/205981_en.html">732027</a>.</p>
+							
+							<img src="img/euflag.png" width="100" alt="European flag" class="img-fluid mr-md-4">
+						</div>
+					</div>
+					<div class="sidebar">
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item17">
+				<a href="#p17" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page17" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+
+				<div id="page17" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p18" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item18">
+				<a href="#p18" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<div id="page18" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+				
+				<div id="page18" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item19">
+				<a href="#p19" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page19" class="layout left">
+					<div class="content">
+						<h1>Break time</h1>
+						<h3 class="white">Great work, now take a quick break</h3>
+					</div>
+				</div>
+
+				<div id="page19" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p20" class="next-page" tabindex="-1" aria-hidden="true">we are back</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item20">
+				<a href="#p20" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page20" class="layout left">
+					<div class="content">
+						<h1>What’s important, to you?</h1>
+						<br>
+						<h2>Write down 5 values from the cluster that you will try to uphold at your company.</h2>
+					</div>
+				</div>
+
+				<div id="page20" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content mt-n-6">
+						<h3>Order them from highest to lowest priority.</h3>
+
+						<div class="list-carousel">
+
+							<div class="card" >
+								<img style="width: 60%; margin: auto;" src="img/Step_7/step_7_1.jpg">
+							</div>
+
+							<div class="card">
+								<img style="width: 60%; margin: auto;" src="img/Step_7/step_7_2.jpg">
+							</div>
+
+							<div class="card">
+								<img style="width: 60%; margin: auto;" src="img/Step_7/step_7_3.jpg">
+							</div>
+						</div>
+
+						<button type="button" id="list-bottom-arrow" data-role="none" class="bottom-arrow" aria-label="Next" role="button" style="display: inline-block;" aria-disabled="false">See examples</button>
+					</div>
+					<div class="sidebar">
+						<a href="#p21" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item21">
+				<a href="#p21" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page21" class="layout left">
+					<div class="content">
+						<h1>Share Priorities</h1>
+						<p>Person to the right of the computer starts.</p>
+						
+					</div>
+				</div>
+
+				<div id="page21" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h3>Go one by one, say your order.</h3>
+						<h2>Have a person note down any <span class="underline">“disagreement”</span> in priorities.</h2>
+					</div>
+					<div class="sidebar">
+						<a href="#p22" class="next-page" tabindex="-1" aria-hidden="true">shared</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item22">
+				<a href="#p22" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page22" class="layout left">
+					<div class="content">
+						<h1>What’s important, as a group?</h1>
+					</div>
+				</div>
+
+				<div id="page22" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h2>From your lists of each person’s prioritised values, </h2> <h2>identify which values are“in line” with each other and if any which are placed at the same order of importance?</h2>
+
+						<h3>If there are different orders of importance, discuss and negotiate a top 5.</h3>
+					</div>
+					<div class="sidebar">
+						<a href="#p24" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item23">
+				<a href="#p23" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				
+				<div id="page23" class="layout left">
+					<div class="content">
+					</div>
+				</div>
+				
+				<div id="page23" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">		
+					</div>
+					<div class="sidebar">
+						<a href="#p24" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item24">
+				<a href="#p24" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page24" class="layout left" style="grid-template-columns: 0.75fr 1fr;">
+					<div class="content" style="max-width: 18em;">
+						<h2>Sometimes you can’t have your cake and eat it too. </h2> <h2> Here are a few stories of certain values that, when put together, can create tension.</h2>
+					</div>
+				</div>
+
+				<div id="page24" class="layout right" style="grid-template-columns: 0.75fr 1fr;">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content mt-n-6" style="max-width: 38em;">
+						<div class="slick-carousel">
+							<div class="card slick-card"  id="slick-card">
+								<p class="heading">Transparency + security: </p>
+								<p class="card-content">
+									A company is making a tracking wearable to find people in a crowd during concerts and big events in case of disasters and emergencies.<br><br>
+									
+									The device’s data is shared with event organisers, public health services and local police. The company cares deeply about transparency as in, being open about why they are building the tracker, and security as in, keeping their users as safe as possible. <br><br>
+									
+									Pickpocketings have occurred during the concerts and police are using the tracking devices’ GPS data to pinpoint the thieves. Should the company tell the concert goers that their data can be shared to the police before the concert goers start using the wearable?<br><br>
+									
+									But then the concert goers might not use the wearable anymore, and will not have a safe experience if there is an emergency.</p>
+							</div>
+
+							<div class="card slick-card">
+								<p class="heading">Openness + inclusion: </p>
+								<p class="card-content">
+									A company is developing an IoT radio and cares deeply about openness as in, open to all to contribute, and inclusion as in, all kinds of people can participate. Some people with extreme viewpoints participate as loudly as possible.<br><br>
+
+									Can the company be “inclusive” if some users feel extremely uncomfortable and leave the platform? Should they stay “open and inclusive” as previously defined or do they need to redefine?</p>
+							</div>
+
+							<div class="card slick-card">
+								<p class="heading">Responsibility + sustainability + inclusion:</p>
+								<p class="card-content">
+									There’s a new connected lightbulb that allows users to control the brightness with voice commands. The company cares deeply about sustainability as in, having as little electronic waste as possible, responsibility as in, being responsible about how they process and use data and the cloud, as well as inclusion as in, including diverse users.<br><br>
+
+									They are releasing a software update with a new machine learning algorithm that will make it easier to process the voice commands. The update can only run on a new microcontroller with local machine learning.<br><br>
+
+									The company is therefore releasing a complete new package. Is there a way to stay true to being “sustainable” while making sure to be “inclusive” to the many voices of their users, and still “responsible” in terms of how they implement their machine learning (locally rather than on the cloud)?</p>
+							</div>
+
+						</div>
+
+					<button type="button" data-role="none" class="bottom-arrow" aria-label="Next" role="button" style="display: inline-block;" aria-disabled="false">more confilcts</button>
+					</div>
+					<div class="sidebar">
+						<a href="#p25" class="next-page" tabindex="-1" aria-hidden="true">next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item25">
+				<a href="#p25" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page25" class="layout left">
+					<div class="content">
+						<h1>Document and Manifest</h1>
+					</div>
+				</div>
+
+				<div id="page25" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h2>Based on your rounds and rounds of clustering, prioritisation and negotiation, write a collective list of the 5 most important values.</h2>
+
+						<h2>This will become your evolving manifesto, your north star, your constitution, your Intentions.</h2>
+						
+						<h2>But most importantly you can evolve and change it as you start working on the product.</h2>
+					</div>
+					<div class="sidebar">
+						<a href="#p27" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item26">
+				<a href="#p26" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page26" class="layout left">
+					<div class="content">
+						<h1>Nothing to see here</h1>
+					</div>
+				</div>
+
+				<div id="page26" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+					</div>
+					<div class="sidebar">
+						<a href="#p27" class="next-page" tabindex="-1" aria-hidden="true">fine then</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item27">
+				<a href="#p27" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page27" class="layout left">
+					<div class="content">
+						<h1>Describe and enact</h1>
+						<br>
+						<h3>For each value add a description and an example of how you might put it into.</h3>
+					</div>
+				</div>
+
+				<div id="page27" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						
+						<h2>Use this template</h2>
+
+						<div class="describe-carousel">
+							<div class="card" id="describe-example">
+								<h4 class="black">In order to uphold <span class="underline">value</span>,  <br> which means <span class="underline">definition</span> in our product, <br> we will <span class="underline">action</span>.</h4>
+							</div>
+
+							<div class="card card-img">
+								<img id="describe-img" src="img/Step_9/step_9_3.jpg">
+							</div>
+
+							<div class="card card-img">
+								<img src="img/Step_9/step_9_2.jpg">
+							</div>
+
+							<div class="card card-img">
+								<img src="img/Step_9/step_9_1.jpg">
+							</div>
+						</div>
+
+						<button type="button" id="describe-bottom-arrow" data-role="none" class="bottom-arrow" aria-label="Next" role="button" style="display: inline-block;" aria-disabled="false">See examples</button>
+						
+					</div>
+					<div class="sidebar">
+						<a href="#p28" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item28">
+				<a href="#p28" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page28" class="layout left" style="grid-template-columns: 0.75fr 1fr;">
+					<div class="content">
+						<h1>Commit it</h1>
+						<br>
+						<h2>Time to type it all up</h2>
+					</div>
+				</div>
+
+				<div id="page28" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content" style="grid-template-columns: 0.75fr 1fr;">
+						<button type="button" id="valueList-top-arrow" data-role="none" class="bottom-arrow" aria-label="Next" role="button" style="display: inline-block;" aria-disabled="false">Previous value</button>
+
+							<div class="valueList-carousel">
+								<div class="card">
+								<div class="value-input">
+									<h3>our #1 value</h3>
+									<p>In order to uphold <input type="text" id="V1-vals">,</p>
+									<p>which means <input type="text" id="V1-defs"> in our product,</p>
+									<p>we will <input type="text" id="V1-act">.</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="value-input">
+									<h3>our #2 value</h3>
+									<p>In order to uphold <input type="text" id="V2-vals">,</p>
+									<p>which means <input type="text" id="V2-defs"> in our product,</p>
+									<p>we will <input type="text" id="V2-act">.</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="value-input">
+									<h3>our #3 value</h3>
+									<p>In order to uphold <input type="text" id="V3-vals">,</p>
+									<p>which means <input type="text" id="V3-defs"> in our product,</p>
+									<p>we will <input type="text" id="V3-act">.</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="value-input">
+									<h3>our #4 value</h3>
+									<p>In order to uphold <input type="text" id="V4-vals">,</p>
+									<p>which means <input type="text" id="V4-defs"> in our product,</p>
+									<p>we will <input type="text" id="V4-act">.</p>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="value-input">
+									<h3>our #5 value</h3>
+									<p>In order to uphold <input type="text" id="V5-vals">,</p>
+									<p>which means <input type="text" id="V5-defs"> in our product,</p>
+									<p>we will <input type="text" id="V5-act">.</p>
+								</div>
+							</div>
+						</div>
+
+						<button type="button" id="valueList-bottom-arrow" data-role="none" class="bottom-arrow" aria-label="Next" role="button" style="display: inline-block;" aria-disabled="false">Next value</button>
+
+					</div>
+					<div class="sidebar">
+						<a href="#p29" class="next-page" tabindex="-1" aria-hidden="true" onclick="commitVals()">Commit</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item29">
+				<a href="#p29" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page29" class="layout left">
+					<div class="content">
+						<h1>Hooray!</h1>
+					</div>
+				</div>
+
+				<div id="page29" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<h2>We would love to see your table workspace as you have been working through this tool.
+						</h2>
+						<h2>Please take a picture of your table from as high above the table as you can.</h2>
+						<h2>Email it to us so we can continue to guide you in the future (not required). </h2>
+						<h3>virteudesignchallenge@gmail.com</p>
+					</div>
+					<div class="sidebar">
+						<a href="#p30" class="next-page" tabindex="-1" aria-hidden="true">Next</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="item" id="item30">
+				<a href="#p30" class="focus-page" tabindex="-1" aria-hidden="true">focus</a><label class="selected-closer" for="menuChk" aria-hidden="true">&nbsp;</label>
+				<div id="page30" class="layout left">
+					<div class="content">
+						<h1>Thank you & Follow-Up</h1>
+					</div>
+				</div>
+
+				<div id="page30" class="layout right">
+					
+					<div class="navbar">
+						<label for="menuChk" class="menuBtn" aria-label="Toggle Menu Visibility" aria-hidden="true">&#9776;</label>
+					</div>
+					<div class="content">
+						<p><input type="radio" name="tools" id="yes_tools" value="yes"> <label for="yes_tools">Yes, we'd like to hear from you about the other series of <span class="radio">tools you will develop in the future.</span></label></p>
+						<p><input type="radio" name="tools" id="no_tools" value="tools"> <label for="no_tools">No thanks.</label></p>
+
+						<div class="divider"></div>
+
+						<p><input type="radio" name="interview" id="yes_interview" value="yes"> <label for="yes_interview">Yes, we’d be ok with a follow-up interview with your <span class="radio"> researchers about our experience of using the tool.</span></label></p>
+
+						<p><input type="radio" name="interview" id="no_interview" value="interview"> <label for="no_interview">No thanks.</label></p>
+
+					</div>
+					<div class="sidebar">
+						<a href="#p16" class="next-page" tabindex="-1" aria-hidden="true" onclick="submit()">Submit</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</div> 
+
+	<!-- You know what it is -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.js" integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+
+	<!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-firestore.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+</html>
